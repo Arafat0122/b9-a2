@@ -177,17 +177,87 @@ nav a {
     font-size: 16px;
     font-weight: 400;
 }
-.destination-img{
+
+.destination-img {
     margin-top: 48px;
-    /* display: block; */
 }
-.destination-img img{
+
+.destination-img img {
     margin: 10px;
 }
-.row-1, .row-2, .row-3{
+
+.row-1,
+.row-2,
+.row-3 {
     display: flex;
     justify-content: space-between;
-    /* gap: 16px; */
+}
+
+/* choose styles section */
+.choose {
+    width: 1170px;
+    margin: 100px auto;
+}
+
+.choose-title {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+}
+
+.choose-description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    width: 645px;
+    margin: 0 auto;
+}
+
+/* design cards styles */
+
+.card-row-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.card-1,
+.card-3 {
+    background: rgba(251, 181, 99, 0.05);
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    border-radius: 16px;
+    padding: 32px;
+    width: 573px;
+    height: 284px;
+    margin-bottom: 24px;
+}
+
+.card-2 {
+    background: rgba(41, 206, 246, 0.05);
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    border-radius: 16px;
+    padding: 32px;
+    width: 573px;
+    height: 284px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+}
+
+.card-title {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.card-description {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card-3 {
+    margin: 0 auto;
 }
 
 /* footer styles section */
@@ -200,6 +270,7 @@ nav a {
         margin: 0 auto;
         flex-direction: column;
     }
+
     nav {
         flex-direction: column;
     }
@@ -253,22 +324,48 @@ nav a {
         margin-left: 25px;
     }
 
-    .destination-title, .destination-description{
+    .destination-title,
+    .destination-description {
         width: 309px;
         margin: 10px 25px;
         text-align: center;
     }
-    .row-1, .row-2, .row-3{
+
+    .row-1,
+    .row-2,
+    .row-3 {
         flex-direction: column;
     }
-    .destination-img{
+
+    .destination-img {
         margin-left: 25px;
     }
-    .destination-img img{
+
+    .destination-img img {
         height: 175px;
         width: 355px;
         margin: 0;
         margin-bottom: 15px;
+    }
+
+    .card-row-1 {
+        flex-direction: column;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        margin-left: 25px;
+        width: 340px;
+        height: 289px;
+        padding: 15px;
+    }
+
+    .choose-title,
+    .choose-description {
+        width: 355px;
+        margin-left: 25px;
+        text-align: center;
     }
 
 }
