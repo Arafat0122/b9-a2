@@ -18,8 +18,11 @@ nav {
     justify-content: space-between;
     margin: 0 70px;
     align-items: center;
+    /* width: 1170px;
+    margin: 0 auto; */
 }
-nav .dropdown{
+
+nav .dropdown {
     display: none;
 }
 
@@ -153,26 +156,61 @@ nav a {
     font-weight: 400;
 }
 
+/* destination styles section */
+.destination {
+    width: 1170px;
+    margin: 100px auto;
+}
+
+.destination-title {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.destination-description {
+    width: 645px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+.destination-img{
+    margin-top: 48px;
+    /* display: block; */
+}
+.destination-img img{
+    margin: 10px;
+}
+.row-1, .row-2, .row-3{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 16px; */
+}
+
 /* footer styles section */
 
 /* responsive styles section */
 @media screen and (max-width: 576px) {
 
     /* nav section styles */
-   .find{
+    .find {
         margin: 0 auto;
         flex-direction: column;
     }
-    nav, .navigation > ul{
+    nav {
         flex-direction: column;
     }
-    .navigation > ul{
+
+    .navigation>ul {
         flex-direction: row;
         gap: 9px;
         padding: 0;
     }
 
-    .banner{
+    .banner {
         width: 355px;
         height: 483px;
         align-items: center;
@@ -191,22 +229,46 @@ nav a {
         padding-top: 0;
         margin: 0 auto;
     }
-    .find>.find-box, .btn-primary {
+
+    .find>.find-box,
+    .btn-primary {
         width: 255px;
     }
-    #find-box-go{
+
+    #find-box-go {
         width: 239px;
     }
-    .popular-tours{
+
+    .popular-tours {
         flex-direction: column;
     }
-    .popular-tours-text{
+
+    .popular-tours-text {
         width: 355px;
         margin-left: 25px;
     }
-    .popular-tours-img img{
+
+    .popular-tours-img img {
         width: 355px;
         margin-left: 25px;
     }
-    
+
+    .destination-title, .destination-description{
+        width: 309px;
+        margin: 10px 25px;
+        text-align: center;
+    }
+    .row-1, .row-2, .row-3{
+        flex-direction: column;
+    }
+    .destination-img{
+        margin-left: 25px;
+    }
+    .destination-img img{
+        height: 175px;
+        width: 355px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
 }
