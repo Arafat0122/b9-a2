@@ -19,6 +19,9 @@ nav {
     margin: 0 70px;
     align-items: center;
 }
+nav .dropdown{
+    display: none;
+}
 
 nav ul {
     display: flex;
@@ -101,6 +104,17 @@ nav a {
     font-weight: 400;
 }
 
+#find-box-go {
+    border-radius: 8px;
+    border-style: none;
+    background: #FFF;
+    padding: 16px 0px 16px 16px;
+    color: rgba(19, 19, 24, 0.50);
+    width: 159px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 .btn-primary {
     border-radius: 8px;
     border-style: none;
@@ -130,6 +144,7 @@ nav a {
     color: #131318;
     font-size: 40px;
     font-weight: 800;
+    margin-top: 0;
 }
 
 .popular-tours-description {
@@ -144,9 +159,54 @@ nav a {
 @media screen and (max-width: 576px) {
 
     /* nav section styles */
-    nav,
-    .find .banner {
+   .find{
         margin: 0 auto;
         flex-direction: column;
     }
+    nav, .navigation > ul{
+        flex-direction: column;
+    }
+    .navigation > ul{
+        flex-direction: row;
+        gap: 9px;
+        padding: 0;
+    }
+
+    .banner{
+        width: 355px;
+        height: 483px;
+        align-items: center;
+    }
+
+    .banner-title {
+        font-size: 22px;
+        padding-top: 15px;
+        padding-bottom: 0;
+    }
+
+    .banner-description {
+        font-size: 14px;
+        width: 300px;
+        padding: 15px;
+        padding-top: 0;
+        margin: 0 auto;
+    }
+    .find>.find-box, .btn-primary {
+        width: 255px;
+    }
+    #find-box-go{
+        width: 239px;
+    }
+    .popular-tours{
+        flex-direction: column;
+    }
+    .popular-tours-text{
+        width: 355px;
+        margin-left: 25px;
+    }
+    .popular-tours-img img{
+        width: 355px;
+        margin-left: 25px;
+    }
+    
 }
