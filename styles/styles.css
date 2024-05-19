@@ -22,7 +22,7 @@ nav {
     margin: 0 auto; */
 }
 
-nav .dropdown {
+nav .hamburger {
     display: none;
 }
 
@@ -364,7 +364,7 @@ footer {
     height: 502px;
     margin: 0 auto;
     padding-top: 110px;
-    
+
 }
 
 .footer-name {
@@ -377,7 +377,8 @@ footer {
     margin: 0 auto;
 }
 
-.footer-description, .rights {
+.footer-description,
+.rights {
     color: #5A5A5D;
     text-align: center;
     font-size: 16px;
@@ -385,14 +386,16 @@ footer {
     font-weight: 400;
     margin: 0 auto;
 }
-.social-logo{
+
+.social-logo {
     display: flex;
     gap: 20px;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.social-logo img{
+
+.social-logo img {
     height: 32px;
     width: 32px;
 
@@ -402,21 +405,25 @@ footer {
 /* responsive styles section */
 @media screen and (max-width: 576px) {
 
-    /* nav section styles */    
+    /* nav section styles */
     .find {
         margin: 0 auto;
         flex-direction: column;
     }
 
     nav {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
 
     }
 
-    .navigation>ul {
-        flex-direction: row;
-        gap: 9px;
-        padding: 0;
+    nav .hamburger {
+        display: flex;
+        height: 32px;
+    }
+
+    .navigation {
+        display: none;
     }
 
     .banner {
@@ -450,6 +457,7 @@ footer {
 
     .popular-tours {
         flex-direction: column;
+        width: 100%;
     }
 
     .popular-tours-text {
@@ -460,6 +468,10 @@ footer {
     .popular-tours-img img {
         width: 355px;
         margin-left: 25px;
+    }
+
+    .destination{
+        width: 100%;
     }
 
     .destination-title,
@@ -473,6 +485,7 @@ footer {
     .row-2,
     .row-3 {
         flex-direction: column;
+        width: 100%;
     }
 
     .destination-img {
@@ -502,6 +515,7 @@ footer {
 
     .choose {
         margin-bottom: 20px;
+        width: 100%;
     }
 
     .choose-title,
@@ -514,6 +528,7 @@ footer {
     .newsletter {
         flex-direction: column;
         margin-top: 20px;
+        width: 100%;
     }
 
     .news-box-1 {
@@ -560,17 +575,22 @@ footer {
     .savings {
         font-size: 25px;
     }
-    footer{
+
+    footer {
         width: 390px;
     }
-    .footer-description, .rights{
+
+    .footer-description,
+    .rights {
         width: 255px;
-    }    
-    .social-logo{
+    }
+
+    .social-logo {
         gap: 10px;
     }
-    hr{
+
+    hr {
         width: 270px;
-    }   
-    
+    }
+
 }
